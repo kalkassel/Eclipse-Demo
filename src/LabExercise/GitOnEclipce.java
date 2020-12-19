@@ -10,6 +10,8 @@ class EmployeeTest1 {
 	// declaring instant variables.
 	String name;
 	int age;
+	String department;
+	int experience;
 	String designation;
 	double salary;
 	
@@ -28,6 +30,15 @@ class EmployeeTest1 {
 		this.age = age;
 	}
 	
+	// Assigning variable department as method.
+	public void empDepartment(String department) {
+		this.department = department;
+	}
+	
+	// Assigning variable experience as method.
+	public void empExperience(int experience) {
+		this.experience = experience;
+	}
 	// Assigning variable designation as method . 
 	public void empDesignation(String designation) {
 		this.designation=designation;
@@ -42,6 +53,8 @@ class EmployeeTest1 {
 	public void displayEmpInfo() {
 		System.out.println("Name: "+ name);
 		System.out.println("Age: "+ age);
+		System.out.println("Department: "+ department);
+		System.out.println("Experience: "+ experience);
 		System.out.println("Designation: "+ designation);
 		System.out.println("Salary: "+ salary);
 	}
@@ -58,6 +71,8 @@ public class GitOnEclipce {
 				
 				// Accessing the employee info using object declared for employee one. 
 				empOne.setAge(34);
+				empOne.empDepartment("Mobile app development");
+				empOne.empExperience(10);
 				empOne.empDesignation("Senior Engineer and Devoloper.");
 				empOne.empSalary(250000.0);
 				empOne.displayEmpInfo();
@@ -65,6 +80,8 @@ public class GitOnEclipce {
 				
 				// Accessing the employee information using object declared for employee two.
 				empTwo.setAge(36);
+				empTwo.empDepartment("Mobile app development");
+				empTwo.empExperience(10);
 				empTwo.empDesignation("Engineer and Devoloper.");
 				empTwo.empSalary(150000.0);
 				empTwo.displayEmpInfo();
