@@ -70,7 +70,7 @@ public class Employee {
 		empOne.displayEmpInfo();
 		
 		
-		System.out.println("--------======-------------");
+		System.out.println("========================================");
 		
 		// Accessing the employee information using object declared for employee two.
 		empTwo.setAge(36);
