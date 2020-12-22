@@ -11,6 +11,7 @@ class EmployeeTest {
 	int age;
 	String designation;
 	double salary;
+	double bonus;
 	
 	// The constructor which have the same name as the class above.
 	public EmployeeTest(String empName) {
@@ -36,6 +37,12 @@ class EmployeeTest {
 	public void empSalary(double salary) {
 		this.salary=salary;
 	}
+	public void setBonus(double newBonus) {
+		bonus = newBonus;
+	}
+	public double getBonus() {
+		return bonus;
+	}
 	
 	// Displaying the employee information using method 
 	public void displayEmpInfo() {
@@ -43,6 +50,7 @@ class EmployeeTest {
 		System.out.println("Age: "+ age);
 		System.out.println("Designation: "+ designation);
 		System.out.println("Salary: "+ salary);
+		System.out.println("Bonus: " + bonus);
 	}
 	
 }
@@ -58,14 +66,19 @@ public class Employee {
 		empOne.setAge(34);
 		empOne.empDesignation("Senior Engineer and Devoloper.");
 		empOne.empSalary(250000.0);
+		empOne.setBonus(5000.0);
 		empOne.displayEmpInfo();
-		System.out.println("--------======-------------");
+		
+		
+		System.out.println("========================================");
 		
 		// Accessing the employee information using object declared for employee two.
 		empTwo.setAge(36);
 		empTwo.empDesignation("Engineer and Devoloper.");
 		empTwo.empSalary(150000.0);
+		empTwo.setBonus(7000.0);
 		empTwo.displayEmpInfo();
+		
 	}
 
 }
